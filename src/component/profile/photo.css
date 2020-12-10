@@ -1,0 +1,42 @@
+img {
+  border-radius: 50%;
+}
+
+img:hover {
+  transform: rotate(360deg);
+  transition: 0.3s ease-in-out;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+ul li {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+}
+
+a {
+  color: #a7bea9;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: aquamarine;
+}
+.nav {
+  z-index: 1;
+  display: flex;
+
+  background: white;
+  justify-content: space-around;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}

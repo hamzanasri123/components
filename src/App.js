@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Adresse from "./component/profile/Adresse";
+import ProfilePhoto from "./component/profile/ProfilePhoto";
+import FullName from "./component/profile/FullName";
+import NavBar from "./component/profile/NavBar";
 function App() {
+  const image = "./images.png";
+  const adresse = "Tunis";
+  const first = "Hamza";
+  const last = "Nasri";
+  const fullName = `${first} ${last}`;
+  const tab = [{ name: "home" }, { name: "contact" }, { name: "about" }];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar arr={tab} FullName={fullName} />
+      <Adresse adrs={adresse} />
+      <ProfilePhoto img={image} />
+      <FullName FullName={fullName} />
     </div>
   );
 }
