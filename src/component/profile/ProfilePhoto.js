@@ -1,7 +1,20 @@
 import React from "react";
 import "./photo.css";
+import PropTypes from "prop-types";
 const ProfilePhoto = (props) => {
-  const { img } = props;
-  return <img src={img} alt="logo" />;
+  const { children, Bio, Prof } = props;
+  return (
+    <div>
+      <div>
+        {children}
+        <p>{Bio}</p>
+      </div>
+      <h1>{Prof}</h1>
+    </div>
+  );
+
+};
+ProfilePhoto.propTypes = {
+  Bio:PropTypes.string,
 };
 export default ProfilePhoto;

@@ -10,8 +10,8 @@ const NavBar = (props) => {
         <ul>
           {arr.map((el, i) => {
             return (
-              <li>
-                <a href={el.name}> {el.name} </a> 
+              <li key={i}>
+                <a href={el.name}> {el.name} </a>
               </li>
             );
           })}

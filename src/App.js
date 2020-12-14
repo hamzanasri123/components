@@ -7,6 +7,8 @@ function App() {
   const image = "./images.png";
   const adresse = "Tunis";
   const first = "Hamza";
+  const bio = "Bonjour ,je suis nasri hamza ..";
+  const Prof = "Developpeur full-stack js";
   const last = "Nasri";
   const fullName = `${first} ${last}`;
   const tab = [{ name: "home" }, { name: "contact" }, { name: "about" }];
@@ -15,7 +17,9 @@ function App() {
     <div className="App">
       <NavBar arr={tab} FullName={fullName} />
       <Adresse adrs={adresse} />
-      <ProfilePhoto img={image} />
+      <ProfilePhoto FullName={fullName} Bio={bio} Prof={Prof}>
+        <img src="./images.png" alt="images" />
+      </ProfilePhoto>
       <FullName FullName={fullName} />
     </div>
   );
